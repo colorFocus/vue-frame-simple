@@ -1,0 +1,32 @@
+{
+  "name": "front-frame-template-simple",
+  "version": "0.1.0",
+  "author": "dong.tsh",
+  "description": "基于vue的前端框架模板-简化版",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "format": "prettier --write \"src/**/*.js\""
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "core-js": "^2.6.5",
+    "element-ui": "^2.12.0",
+    "js-cookie": "^2.2.1",
+    "lodash": "^4.17.15",
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.3",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.6.0",
+    "@vue/cli-service": "^3.6.0",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "prettier": "^1.19.1",
+    "vue-template-compiler": "^2.6.10"
+  }
+}

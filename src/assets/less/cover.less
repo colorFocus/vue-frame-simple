@@ -1,0 +1,154 @@
+//覆盖element-ui样式
+
+//btn
+.el-button{
+  border-color: @kg-color-neusoft;
+  color: @kg-color-neusoft;
+  &:hover{
+    border-color: @kg-color-neusoft;
+  }
+}
+.el-button--primary{
+  color: #fff;
+}
+.el-button--small{
+  padding: 8px 15px;
+}
+
+@bg-color: #ececec;
+//dialog
+.el-dialog{
+  .el-dialog__body{
+    padding-top: 20px;
+    .el-form{
+      .el-form-item__label{
+        line-height: 42px;
+        padding-bottom: 0!important;
+      }
+      .el-input__inner{
+        background-color: #fff;
+        border: 1px solid #fff;
+        border-bottom: 1px solid #000;
+        border-radius: initial;
+        &:focus{
+          border: 1px solid #1C5AFC;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+  .el-dialog__footer{
+    background-color: @bg-color;
+    .el-button--default{
+      border: 1px solid #171717;
+      color: #171717;
+      background-color: @bg-color;
+    }
+    .el-button--primary{
+      border: 1px solid #171717;
+      color: #fff;
+      background-color: #171717;
+    }
+  }
+  .dialog-footer .el-button{
+    min-width: 112px;
+  }
+}
+
+//message
+.el-message-box{
+  width: 512px;
+  border-radius: 2px;
+  border: none;
+  border-top: 5px solid #1143cc;
+  padding-bottom: 0;
+}
+.el-message-box__title{
+  font-size: 26px;
+  padding: 48px 0 0 30px;
+  color: #152935;
+}
+.el-message-box__container{
+  padding-bottom: 50px;
+}
+.el-message-box__status{
+  display: none;
+}
+.el-message-box__message{
+  padding-left: 31px!important;
+  color: #152935;
+}
+.el-message-box__btns{
+  padding: 24px 40px;
+  background-color: @bg-color;
+  .el-button{
+    min-width: 96px;
+  }
+  .el-button--default{
+    border: 1px solid #171717;
+    color: #171717;
+    background-color: @bg-color;
+  }
+  .el-button--primary{
+    border: 1px solid #171717;
+    color: #fff;
+    background-color: #171717;
+  }
+}
+
+//翻页
+@border-color: #dedada;
+.el-pagination{
+  text-align: center;
+}
+.el-pagination .btn-next{
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 1px solid @border-color!important;
+}
+.el-pagination .btn-prev{
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 1px solid @border-color!important;
+}
+.el-pagination .el-pager li{
+  border: 1px solid @border-color!important;
+  border-radius: 4px;
+  height: 24px!important;
+  line-height: 24px!important;
+  font-size: 14px!important;
+}
+.el-pager li.active{
+  background: @kg-color-neusoft;
+  color: #fff;
+  border-color: @kg-color-neusoft;
+}
+.ts-layout-page-box .el-pagination .el-pagination__jump .el-input__inner{
+  border: 1px solid @border-color;
+}
+
+//table
+.el-table{
+  th{
+    padding: 5px 0;
+    line-height: 34px;
+  }
+  .el-table__body-wrapper{
+    height: calc(100vh - 230px);
+    overflow-y: auto;
+  }
+  .ascending .sort-caret.ascending{
+    border-bottom-color: #171717;
+  }
+  .descending .sort-caret.descending{
+    border-top-color: #171717;
+  }
+  .el-table__header .is-leaf{
+    background-color: #fff;
+    border-bottom: 1px solid #979797;
+    color: #171717;
+  }
+  .el-table__body tr:hover > td{
+    background-color: #f5f5f5;
+  }
+}

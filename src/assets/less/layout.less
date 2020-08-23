@@ -1,0 +1,26 @@
+@import url('./var.less');
+
+html,body {
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Microsoft Yahei", serif, "sans-serif";
+  height: 100%;
+  width: 100%;
+  font-size: 14px;
+  color: @kg-text-1;
+  overflow-x: hidden;
+}
+
+.page-container{
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+}
+
+@media all and (max-width: 1080px) {
+  #app {
+    overflow-x: auto;
+  }
+  .page-container {
+    width: 1080px;
+    height: calc(100vh - 6px);
+  }
+}
